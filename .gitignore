@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-.data-mdb
+
 .DS_Store
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -105,3 +105,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+.parcel-cache
+dist
