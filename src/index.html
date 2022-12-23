@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.scss">
   </head>
   <body>
     <header class="section header">
       <div class="container">
         <div class="top">
           <button class="btn btn_dark" type="button">Call - 123 456 789</button>
-          <a href="" class="logo"></a>
+          <a href="" class="logo">
+            <svg width="378" height="188">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
           <button class="btn btn_light" type="button">Reservation</button>
         </div>
         <div class="header-bottom">
@@ -37,7 +42,32 @@
           </nav>
           <ul class="social-links">
             <li class="social-links__item">
-              <a class="social-links__link" href="#"></a>
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -54,31 +84,70 @@
             </p>
             <button class="btn btn_dark" type="button">View Menu</button>
           </div>
-          <div class="hero__right"></div>
+          <div class="hero__right">
+            <picture>
+              <source
+                srcset="
+                  ./images/hero.png?as=webp&width=595,
+                  ./images/hero.png?as=webp&width=1190 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/hero.png?as=avif&width=595,
+                  ./images/hero.png?as=avif&width=1190 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/hero.png?as=png&width=595,
+                  ./images/hero.png?as=png&width=1190 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./images/hero.png?width=595"
+                alt="hero-img"
+                width="595"
+                height="740"
+              />
+            </picture>
+          </div>
         </div>
       </section>
       <section class="section schedule">
         <div class="container">
-          <h2 class="hidden-title">Schedule</h2>
+          <h2 class="visually-hidden">Schedule</h2>
           <ul class="schedule-list">
-            <li class="schedule-list__item">
-              <h3 class="schedule-list__title">Locate Us</h3>
-              <div>
-                <p class="schedule-list__desc">
+            <li class="schedule-list__item schedule-item">
+              <svg class="schedule-item__logo" width="49" height="49">
+                <use href="./images/sprite.svg#location"></use>
+              </svg>
+              <div class="schedule-item__wrapper">
+                <h3 class="schedule-item__title">Locate Us</h3>
+                <p class="schedule-item__desc">
                   Riverside 25, San Diego, California
                 </p>
               </div>
             </li>
-            <li class="schedule-list__item">
-              <div>
-                <h3 class="schedule-list__title">Open Hours</h3>
-                <p class="schedule-list__desc">Mon To Fri 9:00 AM - 9:00 PM</p>
+            <li class="schedule-list__item schedule-item">
+              <svg class="schedule-item__logo" width="49" height="49">
+                <use href="./images/sprite.svg#clock"></use>
+              </svg>
+              <div class="schedule-item__wrapper">
+                <h3 class="schedule-item__title">Open Hours</h3>
+                <p class="schedule-item__desc">Mon To Fri 9:00 AM - 9:00 PM</p>
               </div>
             </li>
-            <li class="schedule-list__item">
-              <div>
-                <h3 class="schedule-list__title">Reservation</h3>
-                <p class="schedule-list__desc">
+            <li class="schedule-list__item schedule-item">
+              <svg class="schedule-item__logo" width="49" height="49">
+                <use href="./images/sprite.svg#reserv"></use>
+              </svg>
+              <div class="schedule-item__wrapper">
+                <h3 class="schedule-item__title">Reservation</h3>
+                <p class="schedule-item__desc">
                   <a class="" href="">restaurantate@gmail.com</a>
                 </p>
               </div>
@@ -88,7 +157,37 @@
       </section>
       <section class="section about">
         <div class="container about__container">
-          <div class="about__left"></div>
+          <div class="about__left">
+            <picture>
+              <source
+                srcset="
+                  ./images/about.jpg?as=webp&width=743,
+                  ./images/about.jpg?as=webp&width=1486 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/about.jpg?as=avif&width=743,
+                  ./images/about.jpg?as=avif&width=1486 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/about.jpg?as=jpg&width=743,
+                  ./images/about.jpg?as=jpg&width=1486 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                src="./images/about.jpg?width=743"
+                alt="tables in the restourante"
+                width="743"
+                height="519"
+              />
+            </picture>
+          </div>
           <div class="about__right">
             <h2 class="title">The Delicious Story</h2>
             <p class="subtitle">
@@ -110,29 +209,133 @@
               </li>
             </ul>
             <span class="about__signature signature">Josefine</span>
+            <svg class="signature__logo" width="200" height="111">
+              <use href="./images/sprite.svg#signature"></use>
+            </svg>
           </div>
         </div>
       </section>
-      <section class="section menu">
+      <section class="section menu-desc">
         <div class="container">
-          <span class="undertitle undertitle_light">Menu</span>
-          <div>
-            <div>
-              <h2 class="title">Try Our Special dishes</h2>
-              <p class="subtitle">
+          <div class="menu-desc__left">
+            <span class="undertitle undertitle_light">Menu</span>   
+            <h2 class="title">Try Our Special dishes</h2>
+            <p class="subtitle">
                 Every time you perfectly dine with us, it should happy for great
                 inspired food in an environment designed with individual touches
                 unique to the local area.
-              </p>
-            </div>
-            <div>
-              <h3>Starters</h3>
-              <ul></ul>
-              <h3>Main Dish</h3>
-              <ul></ul>
-              <h3>Dessert</h3>
-              <ul></ul>
-            </div>
+            </p>
+            <picture class="menu-desc__img">
+                <source
+                  srcset="
+                    ./images/menu0.jpg?as=webp&width=398,
+                    ./images/menu0.jpg?as=webp&width=796 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/menu0.jpg?as=avif&width=398,
+                    ./images/menu0.jpg?as=avif&width=796 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/menu0.jpg?as=jpg&width=398,
+                    ./images/menu0.jpg?as=jpg&width=796 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/menu0.jpg?width=398"
+                  alt="cheesecake"
+                  width="398"
+                  height="548"
+                />
+            </picture>
+          </div>
+          <div class="menu-desc__right menu">
+              <h3 class="title">Starters</h3>
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <picture class="menu-list__img">
+                    <source
+                      srcset="
+                        ./images/menu1.png?as=webp&width=84,
+                        ./images/menu1.png?as=webp&width=168 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/menu1.png?as=avif&width=84,
+                        ./images/menu1.png?as=avif&width=168 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/menu1.png?as=png&width=84,
+                        ./images/menu1.png?as=png&width=168 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      src="./images/menu1.png?width=84"
+                      alt="cocktail"
+                      width="84"
+                      height="84"
+                    />
+                  </picture>
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Raw Scallops from Erquy</h4>
+                    <p class="menu-list__desc">Shuck the scallop to that used for oysters</p>
+                  </div>
+                  <span class="menu-list__price">$40</span>
+                </li>
+                <li class="menu-list__item">
+                  <picture class="menu-list__img">
+                    <source
+                      srcset="
+                        ./images/menu2.png?as=webp&width=84,
+                        ./images/menu2.png?as=webp&width=168 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/menu2.png?as=avif&width=84,
+                        ./images/menu2.png?as=avif&width=168 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/menu2.png?as=png&width=84,
+                        ./images/menu2.png?as=png&width=168 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      src="./images/menu2.png?width=84"
+                      alt="cocktail"
+                      width="84"
+                      height="84"
+                    />
+                  </picture>
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Spring Roll</h4>
+                    <p class="menu-list__desc">Add oil to a hot pan spring onion whites</p>
+                  </div>
+                  <span class="menu-list__price">$20</span>
+                </li>
+              </ul>
+              <h3 class="title">Main Dish</h3>
+              <ul class="menu-list"></ul>
+              <h3 class="title">Dessert</h3>
+              <ul class="menu-list"></ul>
+          </div>
           </div>
         </div>
       </section>
@@ -151,6 +354,9 @@
             <ul>
               <li>
                 <article class="dish">
+                  <svg class="dish__logo" width="167" height="104">
+                    <use href="./images/sprite.svg#bg"></use>
+                  </svg>
                   <p class="dish__price"><span>Only</span>$10</p>
                   <span class="undertitle undertitle_light"
                     >50% Offer Going</span
@@ -163,6 +369,9 @@
               </li>
               <li>
                 <article class="dish">
+                  <svg class="dish__logo" width="167" height="104">
+                    <use href="./images/sprite.svg#bg"></use>
+                  </svg>
                   <p class="dish__price"><span>Only</span>$9</p>
                   <span class="undertitle undertitle_light"
                     >50% Offer Going</span
@@ -175,16 +384,31 @@
               </li>
             </ul>
           </section>
-          <section class="offer-services">
+          <section class="offer-services services">
             <span class="undertitle undertitle_light">What we offer</span>
             <h2 class="title">Our Great Services</h2>
             <p class="subtitle">
               The atmosphere set the stage. It’s about more than just a dining
               room away from your home. food takes the spotlight as guests.
             </p>
-            <ul>
-              <li>
-                <span>Opened 24/7</span>
+            <ul class="services-list">
+              <li class="services-list__item">
+                <svg class="services-list__logo" width="60" height="60">
+                  <use href="./images/sprite.svg#date"></use>
+                </svg>
+                <h4 class="services-list__title">Opened 24/7</h4>
+              </li>
+              <li class="services-list__item">
+                <svg class="services-list__logo" width="60" height="60">
+                  <use href="./images/sprite.svg#menu"></use>
+                </svg>
+                <h4 class="services-list__title">Special Menus</h4>
+              </li>
+              <li class="services-list__item">
+                <svg class="services-list__logo" width="60" height="60">
+                  <use href="./images/sprite.svg#delivery"></use>
+                </svg>
+                <h4 class="services-list__title">Home Delivery</h4>
               </li>
             </ul>
           </section>
@@ -247,21 +471,51 @@
       <div class="container">
         <div class="top">
           <a href="">#TheTastEat</a>
-          <a class="logo" href=""></a>
+          <a href="" class="logo">
+            <svg width="378" height="188">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
           <ul class="social-links">
             <li class="social-links__item">
-              <a class="social-links__link" href="#"></a>
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__logo" width="24" height="24">
+                  <use href="./images/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="bottom">
           <div>
-            <span class="undertitle undertitle_dark">reservation</span>
+            <span class="undertitle undertitle_dark">Contact</span>
             <address>
               <a href="">5 Rue Dalou, 75015 Paris</a>
               <a href="">+123 456 789</a>
               <a href="">josefin@mail.com</a>
             </address>
+            <p>Join our mailing list for updates,Get news & offers events.</p>
             <form class="form" action="">
               <input
                 class="form__input"
@@ -272,15 +526,17 @@
               <button class="btn form__btn" type="submit">Subscribe</button>
             </form>
             <div>
-              <span class="undertitle undertitle_dark">reservation</span>
+              <span class="undertitle undertitle_dark">Working Hours</span>
               <ul>
                 <li>
                   <p><span>Mon – Fri:</span>7.00am – 6.00pm</p>
                 </li>
                 <li>
-                  <p><span>Mon – Fri:</span>7.00am – 6.00pm</p>
+                  <p><span>Sat:</span>7.00am – 7.00pm</p>
                 </li>
-                <li></li>
+                <li>
+                  <p><span>Sun:</span>8.00am – 6.00pm</p>
+                </li>
               </ul>
             </div>
           </div>
