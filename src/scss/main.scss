@@ -1,1 +1,31 @@
+//Vendors
 @use "./vendors/_modern-normalize.css";
+
+//Utils
+@use "./utils/variables";
+@use "./utils/mixins";
+@use "./utils/visually-hidden";
+
+//Base
+@use "./base/common";
+
+//Components
+@use "./components/section";
+@use "./components/container";
+@use "./components/buttons";
+@use "./components/logo";
+@use "./components/menu-btn";
+@use "./components/social-links";
+@use "./components/undertitle";
+@use "./components/title";
+@use "./components/subtitle";
+
+//Layout
+@use "./layout/header";
+@use "./layout/hero";
+@use "./layout/schedule";
+@use "./layout/about";
+@use "./layout/menu";
+@use "./layout/offer";
+@use "./layout/contact";
+@use "./layout/footer";
