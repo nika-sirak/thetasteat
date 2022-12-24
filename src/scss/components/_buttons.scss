@@ -1,0 +1,42 @@
+@use "../utils/mixins" as m;
+
+.btn {
+  min-width: 250px;
+  padding: 18px 30px;
+
+  @include m.font(18px, 400, 27px);
+  letter-spacing: 0.2px;
+  text-align: center;
+  border: 2px solid transparent;
+
+  @include m.transition((background-color, color));
+}
+
+.btn_dark {
+  color: var(--white-color);
+  background-color: var(--dark-bg-color);
+  border-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.btn_light {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--dark-bg-color);
+    color: var(--white-color);
+  }
+}
+
+@media screen and (min-width: 858px) {
+  .btn {
+    min-width: 210px;
+  }
+}

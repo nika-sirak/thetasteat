@@ -1,0 +1,81 @@
+@use "sass:math";
+
+$maxWidth: 1400;
+$maxWidthContainer: 1200;
+
+@function decimal-round($number, $digits: 0, $mode: round) {
+  $n: 1;
+  // $number must be a number
+  @if type-of($number) != number {
+    @warn '#{ $number } is not a number.';
+    @return $number;
+  }
+  // $digits must be a unitless number
+  @if type-of($digits) != number {
+    @warn '#{ $digits } is not a number.';
+    @return $number;
+  } @else if not unitless($digits) {
+    @warn '#{ $digits } has a unit.';
+    @return $number;
+  }
+  @for $i from 1 through $digits {
+    $n: $n * 10;
+  }
+  @if $mode == round {
+    @return calc(round($number * $n) / $n);
+  } @else if $mode == ceil {
+    @return ceil($number * $n) / $n;
+  } @else if $mode == floor {
+    @return floor($number * $n) / $n;
+  } @else {
+    @warn '#{ $mode } is undefined keyword.';
+    @return $number;
+  }
+}
+
+//rem
+@function rem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+
+//rem mixin
+@mixin rem-size($property, $pxValue) {
+  #{$property}: rem($pxValue);
+}
+
+@mixin font($fs, $fw, $lh) {
+  font-size: rem($fs);
+  font-weight: $fw;
+  line-height: decimal-round(calc($lh/$fs), 2);
+}
+
+@mixin transition($property) {
+  transition: all 0.3s ease-in-out;
+  transition-property: $property;
+}
+
+//  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1400 - 320)));
+@mixin adaptiv-value($property, $maxSize, $minSize, $type) {
+  $addSize: $maxSize - $minSize;
+  @if $type== 1 {
+    #{$property}: $maxSize + px;
+    @media screen and (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(
+        #{$minSize + px} + #{$addSize} *
+          ((100vw - 320px) / (#{$maxWidthContainer} - 320))
+      );
+    }
+  } @else if $type==2 {
+    #{$property}: $maxSize + px;
+    @media screen and (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(
+        #{$minSize + px} + #{$addSize} *
+          ((100vw - 320px) / (#{$maxWidth} - 320))
+      );
+    }
+  } @else {
+    #{$property}: calc(
+      #{$minSize + px} + #{$addSize} * ((100vw - 320px) / (#{$maxWidth} - 320))
+    );
+  }
+}

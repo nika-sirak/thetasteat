@@ -1,0 +1,32 @@
+@use "../utils/mixins" as m;
+
+.hero {
+  padding-bottom: 0;
+  background-color: var(--dark-bg-color);
+}
+.hero__wrapper {
+}
+
+.hero__left {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.hero__right {
+  border-style: solid solid none;
+  border-width: 30px;
+  border-color: hsla(0, 0%, 100%, 0.1);
+  border-top-left-radius: 628px;
+  border-top-right-radius: 628px;
+}
+.hero__title {
+  margin-bottom: 1rem;
+  @include m.font(40px, 700, 44px);
+  letter-spacing: 0.2px;
+  font-family: var(--second-font-family);
+}
+
+.hero__btn {
+  display: inline-block;
+  min-width: 0;
+}

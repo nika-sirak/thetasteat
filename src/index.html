@@ -5,24 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600&family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
     <header class="section header">
-      <div class="container">
-        <div class="top">
-          <button class="btn btn_dark" type="button">Call - 123 456 789</button>
-          <a href="" class="logo">
-            <svg width="378" height="188">
-              <use href="./images/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <button class="btn btn_light" type="button">Reservation</button>
-        </div>
-        <div class="header-bottom">
+      <div class="container top">
+        <a class="btn btn_dark" href="tel:123456789">Call - 123 456 789</a>
+        <a href="" class="logo">
+          <svg class="logo__icon" width="378" height="188">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <a class="btn btn_light" href="">Reservation</a>
+      </div>
+
+      <div class="container header-bottom">
+        <div class="header__menu-wrapper">
+          <button type="button" class="btn-menu">
+            <span class="btn-menu__icon"></span>
+          </button>
           <nav class="nav">
             <ul class="nav__menu menu">
-              <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Home</a>
+              </li>
               <li class="menu__item">
                 <a class="menu__link" href="">About Us</a>
               </li>
@@ -40,49 +52,49 @@
               </li>
             </ul>
           </nav>
-          <ul class="social-links">
-            <li class="social-links__item">
-              <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
-                  <use href="./images/sprite.svg#pinterest"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <section class="section hero">
-        <div class="container">
+        <div class="container hero__wrapper">
           <div class="hero__left">
-            <h1 class="hero__title title">Welcome to Restaurant</h1>
-            <p class="subtitle">
+            <h1 class="hero__title title_light">Welcome to Restaurant</h1>
+            <p class="subtitle subtitle_light">
               The people, food and the prime locations make the perfect place
               good friends & family to come together and have great time.
             </p>
-            <button class="btn btn_dark" type="button">View Menu</button>
+            <a class="hero__btn btn btn_dark" href="">View Menu</a>
           </div>
           <div class="hero__right">
             <picture>
@@ -117,12 +129,13 @@
           </div>
         </div>
       </section>
-      <section class="section schedule">
+
+      <!-- <section class="section schedule">
         <div class="container">
           <h2 class="visually-hidden">Schedule</h2>
           <ul class="schedule-list">
             <li class="schedule-list__item schedule-item">
-              <svg class="schedule-item__logo" width="49" height="49">
+              <svg class="schedule-item__icon" width="49" height="49">
                 <use href="./images/sprite.svg#location"></use>
               </svg>
               <div class="schedule-item__wrapper">
@@ -133,7 +146,7 @@
               </div>
             </li>
             <li class="schedule-list__item schedule-item">
-              <svg class="schedule-item__logo" width="49" height="49">
+              <svg class="schedule-item__icon" width="49" height="49">
                 <use href="./images/sprite.svg#clock"></use>
               </svg>
               <div class="schedule-item__wrapper">
@@ -142,7 +155,7 @@
               </div>
             </li>
             <li class="schedule-list__item schedule-item">
-              <svg class="schedule-item__logo" width="49" height="49">
+              <svg class="schedule-item__icon" width="49" height="49">
                 <use href="./images/sprite.svg#reserv"></use>
               </svg>
               <div class="schedule-item__wrapper">
@@ -154,8 +167,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section about">
+      </section> -->
+
+      <!-- <section class="section about">
         <div class="container about__container">
           <div class="about__left">
             <picture>
@@ -209,13 +223,14 @@
               </li>
             </ul>
             <span class="about__signature signature">Josefine</span>
-            <svg class="signature__logo" width="200" height="111">
+            <svg class="signature__icon" width="200" height="111">
               <use href="./images/sprite.svg#signature"></use>
             </svg>
           </div>
         </div>
-      </section>
-      <section class="section menu-desc">
+      </section> -->
+
+      <!-- <section class="section menu-desc">
         <div class="container">
           <div class="menu-desc__left">
             <span class="undertitle undertitle_light">Menu</span>
@@ -341,10 +356,11 @@
             <ul class="menu-list"></ul>
           </div>
         </div>
-      </section>
-      <section class="section bg"></section>
+      </section> -->
 
-      <section class="section offer">
+      <!-- <section class="section bg"></section> -->
+
+      <!-- <section class="section offer">
         <div class="container">
           <section class="offer-dishes">
             <span class="undertitle undertitle_light">offers</span>
@@ -357,7 +373,7 @@
             <ul>
               <li>
                 <article class="dish">
-                  <svg class="dish__logo" width="167" height="104">
+                  <svg class="dish__icon" width="167" height="104">
                     <use href="./images/sprite.svg#bg"></use>
                   </svg>
                   <p class="dish__price"><span>Only</span>$10</p>
@@ -372,7 +388,7 @@
               </li>
               <li>
                 <article class="dish">
-                  <svg class="dish__logo" width="167" height="104">
+                  <svg class="dish__icon" width="167" height="104">
                     <use href="./images/sprite.svg#bg"></use>
                   </svg>
                   <p class="dish__price"><span>Only</span>$9</p>
@@ -396,19 +412,19 @@
             </p>
             <ul class="services-list">
               <li class="services-list__item">
-                <svg class="services-list__logo" width="60" height="60">
+                <svg class="services-list__icon" width="60" height="60">
                   <use href="./images/sprite.svg#date"></use>
                 </svg>
                 <h4 class="services-list__title">Opened 24/7</h4>
               </li>
               <li class="services-list__item">
-                <svg class="services-list__logo" width="60" height="60">
+                <svg class="services-list__icon" width="60" height="60">
                   <use href="./images/sprite.svg#menu"></use>
                 </svg>
                 <h4 class="services-list__title">Special Menus</h4>
               </li>
               <li class="services-list__item">
-                <svg class="services-list__logo" width="60" height="60">
+                <svg class="services-list__icon" width="60" height="60">
                   <use href="./images/sprite.svg#delivery"></use>
                 </svg>
                 <h4 class="services-list__title">Home Delivery</h4>
@@ -416,9 +432,9 @@
             </ul>
           </section>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section contact">
+      <!-- <section class="section contact">
         <div class="container">
           <div class="contact__wrapper">
             <span class="undertitle undertitle_dark">reservation</span>
@@ -468,42 +484,42 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="section footer">
+    <!-- <footer class="section footer">
       <div class="container">
         <div class="top">
           <a href="">#TheTastEat</a>
           <a href="" class="logo">
-            <svg width="378" height="188">
+            <svg clas="logo__icon" width="378" height="188">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
           </a>
           <ul class="social-links">
             <li class="social-links__item">
               <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
+                <svg class="social-links__icon" width="24" height="24">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links__item">
               <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
+                <svg class="social-links__icon" width="24" height="24">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links__item">
               <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
+                <svg class="social-links__icon" width="24" height="24">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links__item">
               <a class="social-links__link" href="#">
-                <svg class="social-links__logo" width="24" height="24">
+                <svg class="social-links__icon" width="24" height="24">
                   <use href="./images/sprite.svg#pinterest"></use>
                 </svg>
               </a>
@@ -545,6 +561,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+@use "../utils/mixins" as m;
+
+.title {
+  font-family: var(--second-font-family);
+}
+
+.title_light {
+  color: var(--white-color);
+}

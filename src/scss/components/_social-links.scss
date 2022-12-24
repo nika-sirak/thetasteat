@@ -1,0 +1,23 @@
+@use "../utils/mixins" as m;
+
+.social-links {
+  display: flex;
+  column-gap: 20px;
+  color: var(--white-color);
+}
+
+.social-links__link {
+  display: block;
+  line-height: 0;
+
+  @include m.transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.social-links__icon {
+  fill: currentColor;
+}
