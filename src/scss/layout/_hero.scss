@@ -4,13 +4,6 @@
   padding-bottom: 0;
   background-color: var(--dark-bg-color);
 }
-.hero__wrapper {
-}
-
-.hero__left {
-  margin-bottom: 40px;
-  text-align: center;
-}
 
 .hero__right {
   border-style: solid solid none;
@@ -29,4 +22,35 @@
 .hero__btn {
   display: inline-block;
   min-width: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    @include m.adaptiv-value(font-size, 80, 40, 0);
+  }
+}
+
+@media screen and (max-width: 714.98px) {
+  .hero__left {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .hero__right {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 715px) {
+  .hero__wrapper {
+    display: flex;
+    column-gap: 2rem;
+  }
+  .hero__left {
+    flex: 0 1 50%;
+  }
+  .hero__right {
+    flex: 0 1 50%;
+    max-width: 633px;
+    border-width: 20px;
+  }
 }
