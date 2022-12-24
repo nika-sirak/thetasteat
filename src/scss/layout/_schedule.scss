@@ -1,0 +1,29 @@
+.schedule {
+  background-color: var(--light-bg-color);
+}
+.schedule-item__icon-wrapper {
+  width: 83px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: var(--white-color);
+  background-color: var(--dark-bg-color);
+  border-radius: 50%;
+}
+.schedule-list {
+}
+.schedule-list__item {
+}
+.schedule-item {
+}
+.schedule-item__icon {
+  fill: currentColor;
+}
+.schedule-item__wrapper {
+}
+.schedule-item__title {
+}
+.schedule-item__desc {
+}
