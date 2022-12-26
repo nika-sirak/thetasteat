@@ -18,7 +18,7 @@
       <div class="container top">
         <a class="btn btn_dark" href="tel:123456789">Call - 123 456 789</a>
         <a href="" class="logo">
-          <svg class="logo__icon" width="378" height="188">
+          <svg class="logo__icon">
             <use href="./images/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -175,10 +175,10 @@
         </div>
       </section>
 
-      <!-- <section class="section about">
+      <section class="section about">
         <div class="container about__container">
           <div class="about__left">
-            <picture>
+            <picture class="about__img">
               <source
                 srcset="
                   ./images/about.jpg?as=webp&width=743,
@@ -209,21 +209,21 @@
             </picture>
           </div>
           <div class="about__right">
-            <h2 class="title">The Delicious Story</h2>
-            <p class="subtitle">
+            <h2 class="about__title title">The Delicious Story</h2>
+            <p class="about__subtitle subtitle">
               The people, food and the prime locations make the perfect place
               for the friends & family to come together and have great time.
             </p>
             <ul class="about-list">
               <li class="about-list__item">
-                <h3 class="about-list__title">2018</h3>
-                <p class="about-list__desc">
+                <h3 class="about-list__title title">2018</h3>
+                <p class="about-list__desc subtitle">
                   Plan for this restaurant to deliver healthy food.
                 </p>
               </li>
               <li class="about-list__item">
-                <h3 class="about-list__title">2022</h3>
-                <p class="about-list__desc">
+                <h3 class="about-list__title title">2022</h3>
+                <p class="about-list__desc subtitle">
                   Happily in the fourth year by fulfill the motto.
                 </p>
               </li>
@@ -234,14 +234,14 @@
             </svg>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section menu-desc">
-        <div class="container">
+      <section class="section menu-desc">
+        <div class="container menu-desc__wrapper">
           <div class="menu-desc__left">
             <span class="undertitle undertitle_light">Menu</span>
-            <h2 class="title">Try Our Special dishes</h2>
-            <p class="subtitle">
+            <h2 class="menu-desc__title title">Try Our Special dishes</h2>
+            <p class="menu-desc__subtitle subtitle">
               Every time you perfectly dine with us, it should happy for great
               inspired food in an environment designed with individual touches
               unique to the local area.
@@ -276,11 +276,11 @@
               />
             </picture>
           </div>
-          <div class="menu-desc__right menu">
-            <h3 class="title">Starters</h3>
+          <div class="menu-desc__right">
+            <h3 class="menu-desc__right-title title">Starters</h3>
             <ul class="menu-list">
               <li class="menu-list__item">
-                <picture class="menu-list__img">
+                <picture>
                   <source
                     srcset="
                       ./images/menu1.png?as=webp&width=84,
@@ -303,22 +303,25 @@
                     type="image/png"
                   />
                   <img
+                    class="menu-list__img"
                     src="./images/menu1.png?width=84"
                     alt="cocktail"
                     width="84"
                     height="84"
                   />
                 </picture>
-                <div class="menu-list__wrapper">
-                  <h4 class="menu-list__title">Raw Scallops from Erquy</h4>
-                  <p class="menu-list__desc">
-                    Shuck the scallop to that used for oysters
-                  </p>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Raw Scallops from Erquy</h4>
+                    <p class="menu-list__desc subtitle">
+                      Shuck the scallop to that used for oysters
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$40</span>
                 </div>
-                <span class="menu-list__price">$40</span>
               </li>
               <li class="menu-list__item">
-                <picture class="menu-list__img">
+                <picture>
                   <source
                     srcset="
                       ./images/menu2.png?as=webp&width=84,
@@ -341,28 +344,365 @@
                     type="image/png"
                   />
                   <img
+                    class="menu-list__img"
                     src="./images/menu2.png?width=84"
                     alt="cocktail"
                     width="84"
                     height="84"
                   />
                 </picture>
-                <div class="menu-list__wrapper">
-                  <h4 class="menu-list__title">Spring Roll</h4>
-                  <p class="menu-list__desc">
-                    Add oil to a hot pan spring onion whites
-                  </p>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Spring Roll</h4>
+                    <p class="menu-list__desc subtitle">
+                      Add oil to a hot pan spring onion whites
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$20</span>
                 </div>
-                <span class="menu-list__price">$20</span>
+              </li>
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu3.png?as=webp&width=84,
+                      ./images/menu3.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu3.png?as=avif&width=84,
+                      ./images/menu3.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu3.png?as=png&width=84,
+                      ./images/menu3.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu3.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">French Onion Soup</h4>
+                    <p class="menu-list__desc subtitle">
+                      Wheat flour, apple cider vinegar, bread
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$25</span>
+                </div>
+              </li>
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu4.png?as=webp&width=84,
+                      ./images/menu4.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu4.png?as=avif&width=84,
+                      ./images/menu4.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu4.png?as=png&width=84,
+                      ./images/menu4.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu4.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Tomato Bruschetta</h4>
+                    <p class="menu-list__desc subtitle">
+                      Bread, olive oil, garlic, black pepper
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$30</span>
+                </div>
               </li>
             </ul>
-            <h3 class="title">Main Dish</h3>
-            <ul class="menu-list"></ul>
-            <h3 class="title">Dessert</h3>
-            <ul class="menu-list"></ul>
+            <h3 class="menu-desc__right-title title">Main Dish</h3>
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu5.png?as=webp&width=84,
+                      ./images/menu5.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu5.png?as=avif&width=84,
+                      ./images/menu5.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu5.png?as=png&width=84,
+                      ./images/menu5.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu5.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">
+                      Grilled Salmon with Dill Sauce
+                    </h4>
+                    <p class="menu-list__desc subtitle">
+                      Brown sugar, salmon fillet, Dijon mustard
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$40</span>
+                </div>
+              </li>
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu6.png?as=webp&width=84,
+                      ./images/menu6.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu6.png?as=avif&width=84,
+                      ./images/menu6.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu6.png?as=png&width=84,
+                      ./images/menu6.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu6.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Roast Beef with Vegetable</h4>
+                    <p class="menu-list__desc subtitle">
+                      Green beans, rib eye, olive oil, beef
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$20</span>
+                </div>
+              </li>
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu7.png?as=webp&width=84,
+                      ./images/menu7.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu7.png?as=avif&width=84,
+                      ./images/menu7.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu7.png?as=png&width=84,
+                      ./images/menu7.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu7.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">
+                      Marrkesh Vegetetarian Curruy
+                    </h4>
+                    <p class="menu-list__desc subtitle">
+                      Sweet potato, eggplant, garbanzo bean
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$25</span>
+                </div>
+              </li>
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu8.png?as=webp&width=84,
+                      ./images/menu8.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu8.png?as=avif&width=84,
+                      ./images/menu8.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu8.png?as=png&width=84,
+                      ./images/menu8.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu8.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Spicy Vegan Potato Curry</h4>
+                    <p class="menu-list__desc subtitle">
+                      Coconut milk, beans, potatoes, curry powder
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$35</span>
+                </div>
+              </li>
+            </ul>
+            <h3 class="menu-desc__right-title title">Dessert</h3>
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu9.png?as=webp&width=84,
+                      ./images/menu9.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu9.png?as=avif&width=84,
+                      ./images/menu9.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu9.png?as=png&width=84,
+                      ./images/menu9.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu9.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Apple Pie with Cream</h4>
+                    <p class="menu-list__desc subtitle">
+                      Whipping cream, egg white, cinnamon
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$15</span>
+                </div>
+              </li>
+              <li class="menu-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/menu10.png?as=webp&width=84,
+                      ./images/menu10.png?as=webp&width=168 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu10.png?as=avif&width=84,
+                      ./images/menu10.png?as=avif&width=168 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/menu10.png?as=png&width=84,
+                      ./images/menu10.png?as=png&width=168 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    class="menu-list__img"
+                    src="./images/menu10.png?width=84"
+                    alt="cocktail"
+                    width="84"
+                    height="84"
+                  />
+                </picture>
+                <div class="menu-flex-wrapper">
+                  <div class="menu-list__wrapper">
+                    <h4 class="menu-list__title">Lemon Meringue Pie</h4>
+                    <p class="menu-list__desc subtitle">
+                      Frozen pie crust, meringue, lemon
+                    </p>
+                  </div>
+                  <span class="menu-list__price">$30</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="section bg"></section> -->
 

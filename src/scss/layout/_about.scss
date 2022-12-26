@@ -1,0 +1,62 @@
+@use "../utils/mixins" as m;
+
+.about {
+  padding-top: 60px;
+  background-color: var(--light-bg-color);
+}
+
+.about__left {
+  max-width: 639px;
+  margin-bottom: 2rem;
+}
+
+.about__title {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.about__subtitle {
+  margin-bottom: 2rem;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about__signature {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.signature {
+  @include m.font(20px, 400, 30px);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .about__container {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  .about__left {
+    padding-top: 13px;
+    flex: 0 1 50%;
+    margin-bottom: 0;
+  }
+
+  .about__right {
+    flex: 0 1 50%;
+  }
+}

@@ -73,7 +73,7 @@ $maxWidthContainer: 1200;
           ((100vw - 320px) / (#{$maxWidth} - 320))
       );
     }
-  } @else {
+  } @else if $type==0 {
     #{$property}: calc(
       #{$minSize + px} + #{$addSize} * ((100vw - 320px) / (#{$maxWidth} - 320))
     );

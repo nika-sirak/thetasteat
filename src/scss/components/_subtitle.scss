@@ -1,11 +1,19 @@
 @use "../utils/mixins" as m;
-.subtitle {
-  margin-bottom: 1rem;
 
+.subtitle {
   @include m.font(17px, 400, 25.5px);
-  letter-spacing: 0.17px;
+  letter-spacing: 0.009em;
+
+  color: var(--second-text-color);
 }
 
 .subtitle_light {
   color: var(--white-color);
+}
+
+@media screen and (min-width: 991px) {
+  .subtitle {
+    @include m.rem-size(font-size, 20px);
+    letter-spacing: 0.01em;
+  }
 }

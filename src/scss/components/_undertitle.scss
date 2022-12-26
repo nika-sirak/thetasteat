@@ -1,0 +1,16 @@
+@use "../utils/mixins" as m;
+
+.undertitle {
+  display: inline-block;
+  padding-top: 0.2em;
+  margin-bottom: 0.75rem;
+  @include m.font(15px, 400, 22px);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.undertitle_dark {
+  color: var(--white-color);
+}

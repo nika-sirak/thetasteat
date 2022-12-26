@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 2rem;
   padding-bottom: 20px;
 }
 
@@ -24,7 +25,7 @@
 
 .menu__link {
   line-height: 1.5;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.01em;
 
   color: var(--white-color);
   @include m.transition(color);
@@ -70,10 +71,16 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-bottom {
+    padding-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 858px) {
   .top {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .menu {
