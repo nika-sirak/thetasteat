@@ -706,56 +706,140 @@
 
       <!-- <section class="section bg"></section> -->
 
-      <!-- <section class="section offer">
-        <div class="container">
-          <section class="offer-dishes">
+      <section class="section offer">
+        <section class="offer__dishes dishes">
+          <div class="container dishes__wrapper">
             <span class="undertitle undertitle_light">offers</span>
-            <h2 class="title">Our Offer dishes</h2>
-            <p class="subtitle">
+            <h2 class="dishes__title title">Our Offer dishes</h2>
+            <p class="dishes__subtitle subtitle">
               Our chefs create melt-in-your-mouth dishes that'll satiate even
               the fussiest eaters now the dishes are in offers use it based on
               hunger.
             </p>
-            <ul>
-              <li>
+            <ul class="dishes__list">
+              <li class="dishes__item">
                 <article class="dish">
-                  <svg class="dish__icon" width="167" height="104">
-                    <use href="./images/sprite.svg#bg"></use>
-                  </svg>
-                  <p class="dish__price"><span>Only</span>$10</p>
-                  <span class="undertitle undertitle_light"
-                    >50% Offer Going</span
-                  >
-                  <h2 class="title">Chicken Burger</h2>
-                  <p class="subtitle">
-                    Chicken burger with the tasty toppings and leaves.
-                  </p>
+                  <div class="dish__desc-wrapper">
+                    <div class="dish__price-wrapper">
+                      <svg
+                        class="dish__icon dish__icon_light"
+                        width="147"
+                        height="84"
+                      >
+                        <use href="./images/sprite.svg#bg"></use>
+                      </svg>
+                      <p class="dish__price"><span>Only</span>$10</p>
+                    </div>
+                    <span class="dish__undertitle undertitle undertitle_light"
+                      >50% Offer Going</span
+                    >
+                    <h2 class="dish__title title">Chicken Burger</h2>
+                    <p class="dish__subtitle subtitle">
+                      Chicken burger with the tasty toppings and leaves.
+                    </p>
+                  </div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dish-offer1.png?as=webp&width=307 1x,
+                        ./images/dish-offer1.png?as=webp&width=614 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish-offer1.png?as=avif&width=307 1x,
+                        ./images/dish-offer1.png?as=avif&width=614 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish-offer1.png?as=png&width=307 1x,
+                        ./images/dish-offer1.png?as=png&width=614 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      src="./images/dish-offer1.png?width=307"
+                      alt="pizza"
+                      width="307"
+                      height="232"
+                    />
+                  </picture>
                 </article>
               </li>
-              <li>
+              <li class="dishes__item">
                 <article class="dish">
-                  <svg class="dish__icon" width="167" height="104">
-                    <use href="./images/sprite.svg#bg"></use>
-                  </svg>
-                  <p class="dish__price"><span>Only</span>$9</p>
-                  <span class="undertitle undertitle_light"
-                    >50% Offer Going</span
-                  >
-                  <h2 class="title">Chicken Pizza</h2>
-                  <p class="subtitle">
-                    Pizza with multiple flavor and the toping are mixed.
-                  </p>
+                  <div class="dish__desc-wrapper">
+                    <div class="dish__price-wrapper">
+                      <svg
+                        class="dish__icon dish__icon_dark"
+                        width="147"
+                        height="84"
+                      >
+                        <use href="./images/sprite.svg#bg"></use>
+                      </svg>
+                      <p class="dish__price dish__price_dark">
+                        <span>Only</span>$9
+                      </p>
+                    </div>
+                    <span class="dish__undertitle undertitle undertitle_light"
+                      >50% Offer Going</span
+                    >
+                    <h2 class="dish__title title">Chicken Pizza</h2>
+                    <p class="dish__subtitle subtitle">
+                      Pizza with multiple flavor and the toping are mixed.
+                    </p>
+                  </div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dish-offer2.png?as=webp&width=325 1x,
+                        ./images/dish-offer2.png?as=webp&width=650 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish-offer2.png?as=avif&width=325 1x,
+                        ./images/dish-offer2.png?as=avif&width=650 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish-offer2.png?as=png&width=325 1x,
+                        ./images/dish-offer2.png?as=png&width=650 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      class="dish__img"
+                      src="./images/dish-offer2.png?width=325"
+                      alt="pizza"
+                      width="325"
+                      height="274"
+                    />
+                  </picture>
                 </article>
               </li>
             </ul>
-          </section>
-          <section class="offer-services services">
-            <span class="undertitle undertitle_light">What we offer</span>
-            <h2 class="title">Our Great Services</h2>
-            <p class="subtitle">
-              The atmosphere set the stage. It’s about more than just a dining
-              room away from your home. food takes the spotlight as guests.
-            </p>
+          </div>
+        </section>
+
+        <section class="offer__services services">
+          <div class="container services__wrapper">
+            <div class="services__desc">
+              <span class="undertitle undertitle_dark">What we offer</span>
+              <h2 class="services_title title title_dark">
+                Our Great Services
+              </h2>
+              <p class="services_subtitle subtitle subtitle_dark">
+                The atmosphere set the stage. It’s about more than just a dining
+                room away from your home. food takes the spotlight as guests.
+              </p>
+            </div>
             <ul class="services-list">
               <li class="services-list__item">
                 <svg class="services-list__icon" width="60" height="60">
@@ -776,9 +860,9 @@
                 <h4 class="services-list__title">Home Delivery</h4>
               </li>
             </ul>
-          </section>
-        </div>
-      </section> -->
+          </div>
+        </section>
+      </section>
 
       <!-- <section class="section contact">
         <div class="container">
