@@ -9,7 +9,7 @@
   height: 188px;
   fill: currentColor;
 }
-//188 134
+
 @media screen and (max-width: 768px) {
   .logo__icon {
     @include m.adaptiv-value(width, 378, 270, 0);

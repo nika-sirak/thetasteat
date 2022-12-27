@@ -89,8 +89,8 @@
       <section class="section hero">
         <div class="container hero__wrapper">
           <div class="hero__left">
-            <h1 class="hero__title title_light">Welcome to Restaurant</h1>
-            <p class="subtitle subtitle_light">
+            <h1 class="hero__title title_dark">Welcome to Restaurant</h1>
+            <p class="subtitle subtitle_dark">
               The people, food and the prime locations make the perfect place
               good friends & family to come together and have great time.
             </p>
@@ -864,11 +864,11 @@
         </section>
       </section>
 
-      <!-- <section class="section contact">
+      <section class="section contact">
         <div class="container">
           <div class="contact__wrapper">
             <span class="undertitle undertitle_dark">reservation</span>
-            <h2 class="title">Book Your Table</h2>
+            <h2 class="title title_dark">Book Your Table</h2>
             <form class="form" action="">
               <label class="form__field">
                 <input
@@ -914,14 +914,14 @@
             </form>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="section footer">
+    <footer class="section footer">
       <div class="container">
         <div class="top">
-          <a href="">#TheTastEat</a>
+          <a class="hashtag" href="">#TheTastEat</a>
           <a href="" class="logo">
-            <svg clas="logo__icon" width="378" height="188">
+            <svg class="logo__icon">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
           </a>
@@ -956,15 +956,41 @@
             </li>
           </ul>
         </div>
-        <div class="bottom">
-          <div>
+        <div class="footer__bottom">
+          <div class="footer__adress-wrapper">
             <span class="undertitle undertitle_dark">Contact</span>
-            <address>
-              <a href="">5 Rue Dalou, 75015 Paris</a>
-              <a href="">+123 456 789</a>
-              <a href="">josefin@mail.com</a>
+            <address class="footer-adress">
+              <ul>
+                <li>
+                  <a
+                    class="footer-adress__link"
+                    href="https://goo.gl/maps/Ad6r45W9T1U6Fq5v8"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >5 Rue Dalou, 75015 Paris</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer-adress__link footer-adress__link_color"
+                    href="tel:+123456789"
+                    >+123 456 789</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer-adress__link footer-adress__link_color"
+                    href="mailto:josefin@mail.com"
+                    >josefin@mail.com</a
+                  >
+                </li>
+              </ul>
             </address>
-            <p>Join our mailing list for updates,Get news & offers events.</p>
+          </div>
+          <div class="footer__form-wrapper">
+            <p class="footer__form-text">
+              Join our mailing list for updates,Get news & offers events.
+            </p>
             <form class="form" action="">
               <input
                 class="form__input"
@@ -974,24 +1000,30 @@
               />
               <button class="btn form__btn" type="submit">Subscribe</button>
             </form>
-            <div>
-              <span class="undertitle undertitle_dark">Working Hours</span>
-              <ul>
-                <li>
-                  <p><span>Mon – Fri:</span>7.00am – 6.00pm</p>
-                </li>
-                <li>
-                  <p><span>Sat:</span>7.00am – 7.00pm</p>
-                </li>
-                <li>
-                  <p><span>Sun:</span>8.00am – 6.00pm</p>
-                </li>
-              </ul>
-            </div>
+          </div>
+          <div class="footer__hours-wrapper">
+            <span class="undertitle undertitle_dark">Working Hours</span>
+            <ul>
+              <li>
+                <p class="footer__hours">
+                  <span class="footer__date">Mon – Fri:</span>7.00am – 6.00pm
+                </p>
+              </li>
+              <li>
+                <p class="footer__hours">
+                  <span class="footer__date">Sat:</span>7.00am – 7.00pm
+                </p>
+              </li>
+              <li>
+                <p class="footer__hours">
+                  <span class="footer__date">Sun:</span>8.00am – 6.00pm
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

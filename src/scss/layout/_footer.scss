@@ -1,0 +1,67 @@
+@use "../utils/mixins" as m;
+
+.footer {
+  background-color: var(--dark-bg-color);
+  color: var(--white-color);
+}
+
+.hashtag {
+  @include m.font(22px, 400, 33px);
+  letter-spacing: 0.01em;
+}
+
+.footer-adress__link {
+  @include m.font(17px, 400, 25.5px);
+  letter-spacing: 0.009em;
+  font-style: normal;
+}
+
+.footer-adress__link_color {
+  color: var(--accent-color);
+}
+
+.footer__form-text {
+  text-align: center;
+  margin-bottom: 25px;
+  @include m.font(17px, 400, 25.5px);
+  letter-spacing: 0.009em;
+}
+.form {
+}
+.form__input {
+}
+.btn {
+}
+.form__btn {
+}
+
+.footer__hours {
+  @include m.font(17px, 400, 25.5px);
+  letter-spacing: 0.009em;
+}
+
+.footer__date {
+  color: var(--accent-color);
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 990.98px) {
+  .footer__adress-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .footer__form-wrapper {
+    margin-bottom: 40px;
+  }
+  .footer__hours-wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .footer__bottom {
+    display: flex;
+    justify-content: space-around;
+  }
+}

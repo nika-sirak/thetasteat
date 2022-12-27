@@ -1,5 +1,9 @@
 @use "../utils/mixins" as m;
 
+.offer {
+  padding-bottom: 0;
+}
+
 .offer__dishes {
   padding-top: 60px;
   padding-bottom: 60px;
