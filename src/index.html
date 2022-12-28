@@ -707,6 +707,40 @@
       <!-- <section class="section bg"></section> -->
 
       <section class="section offer">
+        <section class="offer__services services">
+          <div class="container services__wrapper">
+            <div class="services__desc">
+              <span class="undertitle undertitle_dark">What we offer</span>
+              <h2 class="services_title title title_dark">
+                Our Great Services
+              </h2>
+              <p class="services_subtitle subtitle subtitle_dark">
+                The atmosphere set the stage. It’s about more than just a dining
+                room away from your home. food takes the spotlight as guests.
+              </p>
+            </div>
+            <ul class="services-list">
+              <li class="services-list__item">
+                <svg class="services-list__icon" width="60" height="60">
+                  <use href="./images/sprite.svg#date"></use>
+                </svg>
+                <h4 class="services-list__title">Opened 24/7</h4>
+              </li>
+              <li class="services-list__item">
+                <svg class="services-list__icon" width="60" height="60">
+                  <use href="./images/sprite.svg#menu"></use>
+                </svg>
+                <h4 class="services-list__title">Special Menus</h4>
+              </li>
+              <li class="services-list__item">
+                <svg class="services-list__icon" width="60" height="60">
+                  <use href="./images/sprite.svg#delivery"></use>
+                </svg>
+                <h4 class="services-list__title">Home Delivery</h4>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section class="offer__dishes dishes">
           <div class="container dishes__wrapper">
             <span class="undertitle undertitle_light">offers</span>
@@ -827,41 +861,6 @@
             </ul>
           </div>
         </section>
-
-        <section class="offer__services services">
-          <div class="container services__wrapper">
-            <div class="services__desc">
-              <span class="undertitle undertitle_dark">What we offer</span>
-              <h2 class="services_title title title_dark">
-                Our Great Services
-              </h2>
-              <p class="services_subtitle subtitle subtitle_dark">
-                The atmosphere set the stage. It’s about more than just a dining
-                room away from your home. food takes the spotlight as guests.
-              </p>
-            </div>
-            <ul class="services-list">
-              <li class="services-list__item">
-                <svg class="services-list__icon" width="60" height="60">
-                  <use href="./images/sprite.svg#date"></use>
-                </svg>
-                <h4 class="services-list__title">Opened 24/7</h4>
-              </li>
-              <li class="services-list__item">
-                <svg class="services-list__icon" width="60" height="60">
-                  <use href="./images/sprite.svg#menu"></use>
-                </svg>
-                <h4 class="services-list__title">Special Menus</h4>
-              </li>
-              <li class="services-list__item">
-                <svg class="services-list__icon" width="60" height="60">
-                  <use href="./images/sprite.svg#delivery"></use>
-                </svg>
-                <h4 class="services-list__title">Home Delivery</h4>
-              </li>
-            </ul>
-          </div>
-        </section>
       </section>
 
       <section class="section contact">
@@ -886,7 +885,7 @@
                   placeholder="Email"
                 />
               </label>
-              <label>
+              <label class="form__field">
                 <input
                   class="form__input"
                   type="number"
@@ -897,7 +896,7 @@
               <label class="form__field">
                 <input
                   class="form__input"
-                  type="time"
+                  type="number"
                   name="time"
                   placeholder="Timing"
                 />
@@ -905,7 +904,7 @@
               <label class="form__field">
                 <input
                   class="form__input"
-                  type="date"
+                  type="number"
                   name="date"
                   placeholder="Date"
                 />
@@ -989,16 +988,20 @@
           </div>
           <div class="footer__form-wrapper">
             <p class="footer__form-text">
-              Join our mailing list for updates,Get news & offers events.
+              Join our mailing list for updates, <br />
+              Get news & offers events.
             </p>
-            <form class="form" action="">
+            <form class="footer__form" action="">
               <input
-                class="form__input"
+                class="footer__form-input"
                 type="email"
                 name="email"
                 placeholder="Email"
+                required
               />
-              <button class="btn form__btn" type="submit">Subscribe</button>
+              <button class="btn footer__form-btn" type="submit">
+                Subscribe
+              </button>
             </form>
           </div>
           <div class="footer__hours-wrapper">

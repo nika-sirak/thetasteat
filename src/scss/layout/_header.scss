@@ -72,17 +72,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .header-bottom {
     padding-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 858px) {
-  .top {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
   .menu {
     display: flex;
     column-gap: 20px;

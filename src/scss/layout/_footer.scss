@@ -1,15 +1,25 @@
 @use "../utils/mixins" as m;
+@use "../utils/placeholders";
 
 .footer {
   background-color: var(--dark-bg-color);
   color: var(--white-color);
 }
 
+//top
 .hashtag {
   @include m.font(22px, 400, 33px);
   letter-spacing: 0.01em;
+
+  @include m.transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
+//botttom - adress
 .footer-adress__link {
   @include m.font(17px, 400, 25.5px);
   letter-spacing: 0.009em;
@@ -20,21 +30,25 @@
   color: var(--accent-color);
 }
 
+// bottom - form
 .footer__form-text {
   text-align: center;
   margin-bottom: 25px;
   @include m.font(17px, 400, 25.5px);
   letter-spacing: 0.009em;
-}
-.form {
-}
-.form__input {
-}
-.btn {
-}
-.form__btn {
+  font-size: clamp(1.06rem, calc(1rem + 0.33vw), 1.25rem);
 }
 
+.footer__form-input {
+  @extend %input;
+}
+
+.footer__form-btn {
+  @extend %form-btn;
+  min-width: 100%;
+}
+
+//bottom - hours
 .footer__hours {
   @include m.font(17px, 400, 25.5px);
   letter-spacing: 0.009em;
@@ -45,6 +59,7 @@
   margin-right: 6px;
 }
 
+//adaptive
 @media screen and (max-width: 990.98px) {
   .footer__adress-wrapper {
     text-align: center;
@@ -59,9 +74,29 @@
   }
 }
 
+@media screen and (min-width: 420px) {
+  .footer__form {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__form-input {
+    flex: 1 1 60%;
+    max-width: 378px;
+  }
+  .footer__form-btn {
+    min-width: 180px;
+  }
+}
+
 @media screen and (min-width: 991px) {
   .footer__bottom {
     display: flex;
-    justify-content: space-around;
+    column-gap: 50px;
+  }
+  .footer__form-wrapper {
+    flex: 1 1 33.3%;
+  }
+  .footer__hours-wrapper {
+    text-align: end;
   }
 }

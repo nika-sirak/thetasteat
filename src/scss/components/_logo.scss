@@ -5,12 +5,12 @@
 }
 
 .logo__icon {
-  width: 378px;
-  height: 188px;
+  width: 270px;
+  height: 134px;
   fill: currentColor;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .logo__icon {
     @include m.adaptiv-value(width, 378, 270, 0);
     @include m.adaptiv-value(height, 188, 134, 0);
