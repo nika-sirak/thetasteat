@@ -60,7 +60,20 @@
   color: var(--accent-color);
   margin-right: 6px;
 }
-
+//copyright
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--dark-bg-color);
+  border-top: 1px solid var(--border-color);
+}
+.copyright__desc {
+  @include m.font(13px, 400, 20px);
+  color: var(--white-color);
+}
 //adaptive
 @media screen and (max-width: 990.98px) {
   .footer__adress-wrapper {

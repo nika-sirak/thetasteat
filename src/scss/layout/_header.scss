@@ -1,7 +1,5 @@
 @use "../utils/mixins" as m;
 .header {
-  --border-color: #5c6168;
-
   background-color: var(--dark-bg-color);
   border-bottom: 1px solid var(--border-color);
 }
