@@ -60,6 +60,7 @@
   color: var(--accent-color);
   margin-right: 6px;
 }
+
 //copyright
 .copyright {
   display: flex;
@@ -70,10 +71,21 @@
   background-color: var(--dark-bg-color);
   border-top: 1px solid var(--border-color);
 }
+
+.copyright__list {
+  display: flex;
+  gap: 0.4rem;
+}
+
 .copyright__desc {
   @include m.font(13px, 400, 20px);
   color: var(--white-color);
+
+  &_color {
+    color: var(--accent-color);
+  }
 }
+
 //adaptive
 @media screen and (max-width: 990.98px) {
   .footer__adress-wrapper {
