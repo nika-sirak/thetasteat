@@ -1,0 +1,11 @@
+.bg {
+  min-height: 40vh;
+  background-image: image-set(
+    url(../images/bg-img.jpg?width=1440) 1x,
+    url(../images/bg-img.jpg?width=2880) 2x
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
