@@ -1,9 +1,5 @@
 @use "../utils/mixins" as m;
 
-.menu-desc {
-  padding-top: 60px;
-}
-
 .menu-desc__left {
   margin-bottom: 55px;
 }
@@ -18,7 +14,6 @@
 
 .menu-desc__right-title {
   margin-bottom: 1.4rem;
-  font-size: 2.25rem;
 }
 
 .menu-list {

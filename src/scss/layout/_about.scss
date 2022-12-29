@@ -1,7 +1,6 @@
 @use "../utils/mixins" as m;
 
 .about {
-  padding-top: 60px;
   background-color: var(--light-bg-color);
 }
 
@@ -35,6 +34,7 @@
   @include m.font(20px, 400, 30px);
   text-transform: uppercase;
   letter-spacing: 0.01em;
+
   color: var(--second-text-color);
 }
 

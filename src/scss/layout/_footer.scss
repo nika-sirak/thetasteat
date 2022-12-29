@@ -2,8 +2,8 @@
 @use "../utils/placeholders";
 
 .footer {
-  background-color: var(--dark-bg-color);
   color: var(--white-color);
+  background-color: var(--dark-bg-color);
 }
 
 //top
@@ -34,9 +34,11 @@
 .footer__form-text {
   text-align: center;
   margin-bottom: 25px;
-  @include m.font(17px, 400, 25.5px);
-  letter-spacing: 0.009em;
+
+  font-weight: 400;
   font-size: clamp(1.06rem, calc(1rem + 0.33vw), 1.25rem);
+  line-height: 1.5;
+  letter-spacing: 0.009em;
 }
 
 .footer__form-input {

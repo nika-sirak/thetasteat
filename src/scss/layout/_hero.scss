@@ -1,8 +1,8 @@
 @use "../utils/mixins" as m;
 
 .hero {
-  padding-top: 60px;
   padding-bottom: 0;
+
   background-color: var(--dark-bg-color);
 }
 
@@ -13,46 +13,49 @@
   border-top-left-radius: 628px;
   border-top-right-radius: 628px;
 }
+
 .hero__title {
   margin-bottom: 1rem;
-  @include m.font(40px, 700, 44px);
-  letter-spacing: 0.01em;
+
   font-family: var(--second-font-family);
+  font-size: clamp(2.5rem, calc(1.63rem + 4.35vw), 5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
 }
 
 .hero__btn {
-  margin-top: 20px;
   display: inline-block;
   min-width: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .hero__title {
-    @include m.adaptiv-value(font-size, 80, 40, 0);
-  }
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 714.98px) {
   .hero__left {
-    margin-bottom: 40px;
     text-align: center;
+    margin-bottom: 40px;
   }
+
   .hero__right {
     max-width: 480px;
     margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 715px) {
   .hero__wrapper {
     display: flex;
     column-gap: 2rem;
   }
+
   .hero__left {
     flex: 0 1 50%;
   }
+
   .hero__right {
     flex: 0 1 50%;
     max-width: 633px;
+
     border-width: 20px;
   }
 }
