@@ -1,0 +1,31 @@
+.hidden_blur {
+  opacity: 0;
+  filter: blur(2px);
+
+  transition: all 1000ms ease-in-out;
+}
+.animation_blur {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hidden_translate-left {
+  opacity: 0;
+  transform: translateX(-80%);
+
+  transition: all 1200ms ease-in-out;
+}
+.animation_translate-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden_translate-right {
+  opacity: 0;
+  transform: translateX(80%);
+  transition: all 1200ms ease-in-out;
+}
+.animation_translate-right {
+  opacity: 1;
+  transform: translateX(0);
+}

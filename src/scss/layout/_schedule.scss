@@ -1,6 +1,7 @@
 @use "../utils/mixins" as m;
 
 .schedule {
+  overflow: hidden;
   background-color: var(--light-bg-color);
 }
 

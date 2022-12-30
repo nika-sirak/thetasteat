@@ -1,5 +1,9 @@
 @use "../utils/mixins" as m;
 
+.menu-desc__right {
+  overflow: hidden;
+}
+
 .menu-desc__left {
   margin-bottom: 55px;
 }
@@ -88,7 +92,10 @@
   }
 
   .menu-desc__left {
-    margin-bottom: 75px;
+    position: sticky;
+    top: 0;
+    height: max-content;
+    margin-bottom: 0;
     flex: 0 1 36%;
   }
 

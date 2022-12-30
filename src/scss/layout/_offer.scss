@@ -1,6 +1,7 @@
 @use "../utils/mixins" as m;
 
 .offer {
+  overflow: hidden;
   padding-bottom: 0;
 }
 
