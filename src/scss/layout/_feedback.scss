@@ -2,6 +2,7 @@
 
 .feedback {
   background-color: var(--dark-bg-color);
+  padding-bottom: 80px;
 }
 
 .feedback__title {
@@ -76,13 +77,13 @@
   width: 15px;
   height: 15px;
 
-  border: 2px solid teal;
+  background-color: var(--border-color);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .feedback__btn-active {
-  background-color: teal;
+  background-color: var(--white-color);
 }
 
 .customer {

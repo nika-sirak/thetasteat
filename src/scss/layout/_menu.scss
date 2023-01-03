@@ -1,5 +1,9 @@
 @use "../utils/mixins" as m;
 
+.menu-desc {
+  padding-bottom: 40px;
+}
+
 .menu-desc__right {
   overflow: hidden;
 }
@@ -86,6 +90,10 @@
 }
 
 @media screen and (min-width: 991px) {
+  .menu-desc {
+    padding-bottom: 80px;
+  }
+
   .menu-desc__wrapper {
     display: flex;
     column-gap: 30px;
