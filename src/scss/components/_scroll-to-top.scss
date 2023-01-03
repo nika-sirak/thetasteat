@@ -1,0 +1,37 @@
+@use "../utils/mixins" as m;
+
+.scroll-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 62px;
+  right: 10px;
+  padding: 0;
+
+  line-height: 0;
+  background-color: var(--decoration-color);
+  color: var(--accent-color);
+  border-radius: 50%;
+  border: none;
+  @include m.transition((color, background-color));
+
+  cursor: pointer;
+  opacity: 0;
+
+  &:hover,
+  &:focus {
+    color: var(--decoration-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.scroll-top_active {
+  opacity: 1;
+}
+
+.scroll-top__icon {
+  width: 40px;
+  height: 40px;
+
+  fill: currentColor;
+}
