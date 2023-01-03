@@ -729,10 +729,10 @@
             hello in an email.
           </p>
           <div class="feedback__top">
-            <div class="arrow-left"></div>
-            <div class="frame">
-              <ul class="slider feedback__list">
-                <li class="feedback__li">
+            <div class="feedback__btn swiper-button-prev"></div>
+            <div class="frame swiper mySwiper">
+              <ul class="feedback__list swiper-wrapper">
+                <li class="feedback__li swiper-slide">
                   <article class="feedback__article customer">
                     <div class="customer__wrapper-desc">
                       <div class="customer__wrapper-img">
@@ -784,7 +784,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="feedback__li">
+                <li class="feedback__li swiper-slide">
                   <article class="feedback__article customer">
                     <div class="customer__wrapper-desc">
                       <div class="customer__wrapper-img">
@@ -836,7 +836,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="feedback__li">
+                <li class="feedback__li swiper-slide">
                   <article class="feedback__article customer">
                     <div class="customer__wrapper-desc">
                       <div class="customer__wrapper-img">
@@ -890,9 +890,9 @@
                 </li>
               </ul>
             </div>
-            <div class="arrow-right"></div>
+            <div class="feedback__btn swiper-button-next"></div>
           </div>
-          <div class="feedback__bottom"></div>
+          <div class="feedback__pagin swiper-pagination"></div>
         </div>
       </section>
       <section class="section bg"></section>
@@ -1248,7 +1248,6 @@
         </ul>
       </div>
     </footer>
-
     <script src="./index.js" type="module"></script>
   </body>
 </html>
