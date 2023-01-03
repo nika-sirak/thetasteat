@@ -3,6 +3,7 @@
 .offer {
   overflow: hidden;
   padding-bottom: 0;
+  padding-top: 0;
 }
 
 .offer__dishes {
@@ -125,13 +126,13 @@
   background-color: var(--dark-bg-color);
 }
 
-.services_title {
+.services__title {
   margin-bottom: 0.375em;
 
   @include m.rem-size(font-size, 32px);
 }
 
-.services_subtitle {
+.services__subtitle {
   margin-bottom: 2em;
 }
 
@@ -142,7 +143,7 @@
   justify-content: center;
   padding: 40px 20px 20px;
   margin-bottom: 20px;
-  border: 20px solid #323841;
+  border: 20px solid var(--decoration-color);
 
   &:last-child {
     margin-bottom: 0;

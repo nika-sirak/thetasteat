@@ -1,6 +1,7 @@
 //refs
 const leftArrow = document.querySelector(".arrow-left");
 const rightArrow = document.querySelector(".arrow-right");
+const frameEl = document.querySelector(".frame");
 const sliderEl = document.querySelector(".slider");
 const sliderItem = document.querySelectorAll(".feedback__li");
 const bottomEl = document.querySelector(".feedback__bottom");
@@ -8,6 +9,18 @@ const bottomEl = document.querySelector(".feedback__bottom");
 //var
 let sliderNum = 1;
 const length = sliderItem.length;
+// let widthPx = getComputedStyle(sliderItem[0]).getPropertyValue("width");
+let width = 0;
+
+const sizeObserver = new ResizeObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.contentBoxSize) {
+      const cr = entry.contentRect;
+      width = entry.borderBoxSize[0].inlineSize;
+    }
+  });
+});
+sliderItem.forEach((el) => sizeObserver.observe(el));
 
 //radio buttons
 for (let i = 0; i < length; i++) {
@@ -28,7 +41,7 @@ const resetBtnStyle = () => {
 buttonsEl.forEach((el, i) =>
   el.addEventListener("click", () => {
     resetBtnStyle();
-    sliderEl.style.transform = `translateX(-${i * 544}px)`;
+    sliderEl.style.transform = `translateX(-${i * width}px)`;
     sliderNum = i + 1;
     el.classList.add("feedback__btn-active");
   })
@@ -36,7 +49,7 @@ buttonsEl.forEach((el, i) =>
 
 //arrow slider
 const nextSlide = () => {
-  sliderEl.style.transform = `translateX(-${sliderNum * 544}px)`;
+  sliderEl.style.transform = `translateX(-${sliderNum * width}px)`;
   sliderNum += 1;
 };
 
@@ -46,12 +59,12 @@ const firstSlide = () => {
 };
 
 const prevSlide = () => {
-  sliderEl.style.transform = `translateX(-${(sliderNum - 2) * 544}px)`;
+  sliderEl.style.transform = `translateX(-${(sliderNum - 2) * width}px)`;
   sliderNum -= 1;
 };
 
 const lastSlide = () => {
-  sliderEl.style.transform = `translateX(-${(length - 1) * 544}px)`;
+  sliderEl.style.transform = `translateX(-${(length - 1) * width}px)`;
   sliderNum = length;
 };
 

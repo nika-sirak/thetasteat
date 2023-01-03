@@ -1,18 +1,16 @@
-.bg {
-  display: none;
-}
+// .bg {
+//   display: none;
+// }
 
-@media screen and (min-width: 991px) {
-  .bg {
-    display: block;
-    min-height: 60vh;
-    background-image: image-set(
-      url(../images/bg-img.jpg?width=1440) 1x,
-      url(../images/bg-img.jpg?width=2880) 2x
-    );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+.bg {
+  display: block;
+  min-height: 60vh;
+  background-image: image-set(
+    url(../images/bg-img.jpg?width=1440) 1x,
+    url(../images/bg-img.jpg?width=2880) 2x
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

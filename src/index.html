@@ -720,13 +720,70 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section class="section feedback">
         <div class="container">
+          <span class="undertitle undertitle_dark">What we offer</span>
+          <h2 class="feedback__title title title_dark">Our Great Services</h2>
+          <p class="feedback__subtitle subtitle subtitle_dark">
+            The atmosphere set the stage. It’s about more than just a dining
+            room away from your home. food takes the spotlight as guests.
+          </p>
           <div class="feedback__top">
             <div class="arrow-left"></div>
             <div class="frame">
               <ul class="slider feedback__list">
-                <li class="feedback__li">Slide 1</li>
+                <li class="feedback__li">
+                  <article class="feedback__article customer">
+                    <div class="customer__wrapper-desc">
+                      <div class="customer__wrapper-img">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/customer1.png?as=webp&widt=113 1x,
+                              ./images/customer1.png?as=webp&widt=226 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/customer1.png?as=avif&widt=113 1x,
+                              ./images/customer1.png?as=avif&widt=226 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./images/customer1.png?as=png&widt=113 1x,
+                              ./images/customer1.png?as=png&widt=226 2x
+                            "
+                            type="image/png"
+                          />
+                          <img
+                            class="customer__img"
+                            src="./images/customer1.png?width=113"
+                            alt="customer1"
+                            width="113"
+                            height="113"
+                          />
+                        </picture>
+                        <div class="customer__wrapper-icon">
+                          <svg class="customer__icon" width="15" height="12">
+                            <use href="./images/sprite.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="customer__name">Nika D</h3>
+                        <p class="customer__city">New York</p>
+                      </div>
+                    </div>
+                    <p class="customer__review">
+                      They known for its fabulous taste and food. Anywhere you
+                      go your hunger is satisfied. The best chicken & burgers
+                      those are yummy.
+                    </p>
+                  </article>
+                </li>
                 <li class="feedback__li">Slide 2</li>
                 <li class="feedback__li">Slide 3</li>
               </ul>
@@ -734,29 +791,18 @@
             <div class="arrow-right"></div>
           </div>
           <div class="feedback__bottom"></div>
-          <!-- <div class="swiper mySwiper">
-            <ul class="feedback__list swiper-wrapper">
-              <li class="feedback__li swiper-slide">Slide 1</li>
-              <li class="feedback__li swiper-slide">Slide 2</li>
-              <li class="feedback__li swiper-slide">Slide 3</li>
-              <li class="feedback__li swiper-slide">Slide 4</li>
-              <li class="feedback__li swiper-slide">Slide 5</li>
-            </ul>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div> -->
         </div>
       </section>
+      <section class="section bg"></section>
       <section class="section offer" id="offer">
         <section class="offer__services services">
           <div class="container services__wrapper">
             <div class="services__desc">
               <span class="undertitle undertitle_dark">What we offer</span>
-              <h2 class="services_title title title_dark">
+              <h2 class="services__title title title_dark">
                 Our Great Services
               </h2>
-              <p class="services_subtitle subtitle subtitle_dark">
+              <p class="services__subtitle subtitle subtitle_dark">
                 The atmosphere set the stage. It’s about more than just a dining
                 room away from your home. food takes the spotlight as guests.
               </p>
@@ -792,7 +838,7 @@
             </ul>
           </div>
         </section>
-        <section class="section bg"></section>
+
         <section class="offer__dishes dishes">
           <div class="container dishes__wrapper">
             <span class="undertitle undertitle_light">offers</span>
