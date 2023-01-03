@@ -18,8 +18,7 @@
   cursor: pointer;
   opacity: 0;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: var(--decoration-color);
     background-color: var(--accent-color);
   }

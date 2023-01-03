@@ -8,6 +8,7 @@ scrollBtn.addEventListener("click", onScrollBtn);
 function onScrollBtn() {
   window.scrollTo({
     top: 0,
+    left: 0,
     behavior: "smooth",
   });
 }
