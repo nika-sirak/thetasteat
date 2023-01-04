@@ -22,7 +22,9 @@
             <use href="./images/sprite.svg#logo"></use>
           </svg>
         </a>
-        <a class="btn btn_light" href="">Reservation</a>
+        <button class="btn btn_light" type="button" data-action="open-modal">
+          Reservation
+        </button>
       </div>
 
       <div class="container header-bottom">
@@ -1273,6 +1275,12 @@
     <div class="spinner">
       <div class="lds-dual-ring"></div>
     </div>
+    <dialog class="modal">
+      <form method="dialog">
+        <button>Submit</button>
+        <button>Close me</button>
+      </form>
+    </dialog>
     <script src="./index.js" type="module"></script>
   </body>
 </html>
