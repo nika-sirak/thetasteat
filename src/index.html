@@ -1279,26 +1279,31 @@
       <div class="modal_overlay">
       <header class="modal__header">
         <h2 class="modal__title title">Book Your Table</h2>
-        <button class="close-btn"><span>&#x2716</span></button>
+        <button class="close-btn"><span> &#x2716 </span></button>
       </header>
       <form class="modal__form" method="dialog">
-        <label>
-          <input class="modal__input" type="text" name="name" placeholder="Name" />
-        </label>
-        <label>
-          <input class="modal__input" type="email" name="email" placeholder="Email" />
-        </label>
-        <label>
-          <input class="modal__input" type="number" name="people" placeholder="Persons" />
-        </label>
-        <label>
-          <input class="modal__input" type="number" name="time" placeholder="Timing" />
-        </label>
-        <label>
-          <input class="modal__input" type="number" name="date" placeholder="Date" />
-        </label>
+        <div class="modal__input-wrapper">
+          <input class="modal__input" type="text" name="name" placeholder="Name" id="name" />
+          <label class="modal__label" for="name">Name</label>
+        </div>
+        <div class="modal__input-wrapper"> 
+          <input class="modal__input" type="email" name="email" placeholder="Email" id="email"/>
+          <label class="modal__label" for="email">Email</label>
+        </div>
+        <div class="modal__input-wrapper">
+          <input class="modal__input" type="number" name="people" placeholder="Persons" id="people"/>
+          <label class="modal__label" for="people">Persons</label>
+        </div>
+        <div class="modal__input-wrapper">
+          <input class="modal__input" type="number" name="time" placeholder="Timing" id="time"/>
+          <label class="modal__label" for="time">Timing</label>
+        </div>
+        <div class="modal__input-wrapper">
+          <input class="modal__input" type="number" name="date" placeholder="Date" id="date"/>
+          <label class="modal__label" for="date">Date</label>
+        </div>
         <footer class="modal__footer">
-          <button class="modal__form-btn modal__form-btn_dark" type="submit" value="cancel">Cancel</button>
+          <button class="modal__form-btn modal__form-btn_dark" type="reset" value="cancel">Cancel</button>
           <button  class="modal__form-btn modal__form-btn_light" type="submit" value="confirm">Book A Table</button>
         </footer>
       </form>

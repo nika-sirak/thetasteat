@@ -1,7 +1,11 @@
 @use "../utils/mixins" as m;
 @use "../utils/placeholders";
 
-html:has(dialog[open]) {
+// html:has(dialog[open]) {
+//   overflow: hidden;
+// }
+
+.lock {
   overflow: hidden;
 }
 
@@ -111,12 +115,12 @@ html:has(dialog[open]) {
   width: min(100%, 400px);
   display: flex;
   flex-direction: column;
-  row-gap: 0.8rem;
+  row-gap: 1.2rem;
 }
 
 .modal__input {
   @extend %input;
-  padding: 16px 20px;
+  padding: 16px 24px;
 
   border: 1px solid var(--border-color);
   border-radius: 2px;
@@ -125,7 +129,7 @@ html:has(dialog[open]) {
 
   &::placeholder {
     color: var(--border-color);
-    opacity: 0.8;
+    opacity: 0;
   }
 }
 
@@ -159,4 +163,26 @@ html:has(dialog[open]) {
 .modal__form-btn_dark {
   background-color: var(--primary-text-color);
   color: var(--accent-color);
+}
+
+.modal__input-wrapper {
+  position: relative;
+}
+
+.modal__label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  padding: 4px 8px 0px;
+  line-height: 0;
+  transform: translate(0, -50%);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.modal__input:focus ~ label,
+.modal__input:not(:placeholder-shown) ~ label {
+  background-color: var(--light-bg-color);
+  color: var(--accent-color);
+  translate: 0 -26px;
 }
