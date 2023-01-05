@@ -186,7 +186,7 @@
               <div class="schedule-item__wrapper">
                 <h3 class="schedule-item__title">Reservation</h3>
                 <p class="schedule-item__desc">
-                  <a class="" href="">restaurantate@gmail.com</a>
+                  <a class="schedule-item__link" href="">restaurantate@gmail.com</a>
                 </p>
               </div>
             </li>
@@ -1276,10 +1276,33 @@
       <div class="lds-dual-ring"></div>
     </div>
     <dialog class="modal">
-      <form method="dialog">
-        <button>Submit</button>
-        <button>Close me</button>
+      <div class="modal_overlay">
+      <header class="modal__header">
+        <h2 class="modal__title title">Book Your Table</h2>
+        <button class="close-btn"><span>&#x2716</span></button>
+      </header>
+      <form class="modal__form" method="dialog">
+        <label>
+          <input class="modal__input" type="text" name="name" placeholder="Name" />
+        </label>
+        <label>
+          <input class="modal__input" type="email" name="email" placeholder="Email" />
+        </label>
+        <label>
+          <input class="modal__input" type="number" name="people" placeholder="Persons" />
+        </label>
+        <label>
+          <input class="modal__input" type="number" name="time" placeholder="Timing" />
+        </label>
+        <label>
+          <input class="modal__input" type="number" name="date" placeholder="Date" />
+        </label>
+        <footer class="modal__footer">
+          <button class="modal__form-btn modal__form-btn_dark" type="submit" value="cancel">Cancel</button>
+          <button  class="modal__form-btn modal__form-btn_light" type="submit" value="confirm">Book A Table</button>
+        </footer>
       </form>
+      </div>
     </dialog>
     <script src="./index.js" type="module"></script>
   </body>
