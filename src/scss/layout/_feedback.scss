@@ -19,7 +19,7 @@
 }
 
 .feedback__li {
-  flex: 0 0 100%;
+  // flex: 0 0 100%;
 
   color: var(--white-color);
   background-color: var(--decoration-color);
@@ -87,12 +87,17 @@
 
 .swiper-pagination.feedback__pagin {
   margin-top: 1rem;
+  margin-inline: auto;
   position: static;
   display: flex;
   justify-content: center;
   gap: 0.4rem;
 }
-
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  transform: translateX(0);
+}
 .swiper-pagination-bullet {
   width: 15px;
   height: 15px;

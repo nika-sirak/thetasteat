@@ -1,14 +1,28 @@
-import Swiper, { Navigation, Pagination } from "swiper";
+import Swiper, { Navigation, Pagination, Keyboard, Mousewheel } from "swiper";
 
 const swiper = new Swiper(".mySwiper", {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Keyboard, Mousewheel],
   slidesPerView: 1,
   speed: 400,
   spaceBetween: 30,
   loop: true,
+  touchRatio: 1,
+  breakpoints: {
+    640: {
+      slidesPerView: 1.5,
+    },
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  mousewheel: {
+    sensitivity: 1,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
